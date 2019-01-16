@@ -9,4 +9,4 @@ Incluye:
   - Transiciones, Transformaciones y animaciones
   - HTML5
   
-nota: Descomprimir imagenes.rar para tener las imagenes necesarias para la correcta visualización
+nota: Descomprimir imagenes.rar para tener las imágenes necesarias para la correcta visualización de la web
