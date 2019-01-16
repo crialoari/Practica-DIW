@@ -8,3 +8,5 @@ Incluye:
   - CSS
   - Transiciones, Transformaciones y animaciones
   - HTML5
+  
+nota: Descomprimir imagenes.rar para tener las imagenes necesarias para la correcta visualización
