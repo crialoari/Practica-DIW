@@ -1,0 +1,151 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+nav,h5,h4,h2{
+	font-family: 'Josefin Sans', sans-serif;
+	color: #74248b;
+}
+
+.feedback{
+	background-color: #ddcae2;
+}
+
+
+#footer,.resalto{
+	background-color: #74248b;
+}
+
+#logo{
+	max-width: 100px;
+}
+
+.icono{
+ max-width: 25px;
+}
+
+.nav a{
+	color: #ddcae2;
+}
+.nav a:hover{
+	color: #74248b
+}
+
+.nav a:active{
+	color: #74248b;
+}
+
+a{
+	color: #74248b;
+}
+a:hover{
+	color: #ddcae2
+}
+
+a:active{
+	color: #ddcae2;
+}
+
+label{
+	color: #74248b;
+}
+
+#jumboHistoria{
+	background-image: url(about1.jpg);
+	background-size: cover;
+	background-position: center;
+	transition: 1s ease-in-out;
+}
+
+#jumboHistoria:hover{
+	background-position: top left;
+}
+
+#jumboExito{
+	background-image: url(about2.jpg);
+	background-size: cover;
+	background-position: center;
+	transition: 1s ease-in-out;
+}
+
+#jumboExito:hover{
+	background-position: top right;
+}
+
+.sombra{text-shadow: 2px 2px 4px #74248b;}
+
+.miniatura{
+	transition: 0.4s;
+}
+
+.miniatura:hover{
+	transform: scale(1.1);
+	transform-origin: center center;
+}
+
+#monitoras .card{
+	transition: 0.4s ease-in-out;
+}
+
+#monitoras .card:hover{
+	background-color: #ddcae2;
+	border: 1px solid #74248b;
+}
+
+.feedback strong{
+	transition: 0.5s ease-in-out;
+}
+
+.feedback:hover strong{
+	  color:white;
+	  display: inline-block;
+	  transform-origin: center center;
+	  transform: rotate(360deg);
+}
+
+#contacto h4, #formulario h4{
+	transition: 0.4s ease-in-out;
+	display: inline-block;
+}
+
+#contacto:hover h4, #formulario:hover h4{
+	transform-origin: left top;
+	transform: scale(1.1)  rotate(-5deg) translateY(10px);
+}
+
+
+@keyframes animacionTel {
+	0% {transform: scale(1) rotate(0deg);}
+	25% {transform: scale(1.2)  rotate(10deg);}
+	50% {transform: scale(1) rotate(0deg);}
+	75% {transform: scale(1.2)  rotate(-10deg);}
+	100% {transform: rotate(0deg)}
+}
+
+#telefono{
+	animation: animacionTel 2s 1s infinite;
+}
+
+@keyframes animacionMap {
+	0% {transform: translateY(-20px);}
+	25% {transform: translateY(0px);}
+	50% {transform: rotate(0deg);}
+	75% {transform: scale(1.2) rotate(5deg);}
+	100% {transform: rotate(0deg)}
+}
+
+#mapa{
+	animation: animacionMap 2s 1s infinite;
+}
+
+@keyframes animacionReloj {
+	0% {transform: rotate(0deg);}
+	25% {transform: rotate(7deg);}
+	50% {transform: rotate(0deg);}
+	75% {transform: rotate(-7deg);}
+	100% {transform: rotate(0deg)}
+}
+
+#reloj{
+	animation: animacionReloj 1s 1s infinite;
+}

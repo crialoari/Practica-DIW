@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Curves | Tu gimnasio</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+<!--barra menu navegacion-->
+	<nav class="navbar navbar-expand-md bg-light navbar-light sticky-top">
+		<a class="navbar-brand" href="index.html"><img src="icons/curves.png" id="logo" alt="Home"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  	</button>
+  	<div class="collapse navbar-collapse" id="collapsibleNavbar">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item"><a class="nav-link" href="programas.html">Programas</a></li>
+	      <li class="nav-item"><a class="nav-link" href="info.html">Sobre nosotras</a></li>
+	      <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>    
+	    </ul>
+      	<ul class="navbar-nav">
+        	<li class="nav-item">
+          		<audio controls autoplay loop>
+          		<source src="multimedia/music.mp3" type="audio/mpeg">
+          		Tu navegador no soporta audio :(
+          		</audio>
+        </li>
+      </ul>
+	</div>
+	</nav>
+<!--carrusel imagenes promo-->
+<div id="slide_promo" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#slide_promo" data-slide-to="0" class="active"></li>
+    <li data-target="#slide_promo" data-slide-to="1"></li>
+    <li data-target="#slide_promo" data-slide-to="2"></li>
+    <li data-target="#slide_promo" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+       <picture>
+          <source srcset="carrusel/slide_tugimnasio_small.jpg" media="(max-width: 576px)">
+          <img class="d-block w-100" src="carrusel/slide_tugimnasio.jpg" alt="Tu gimnasio">
+        </picture>
+    </div>
+    <div class="carousel-item">
+       <picture>
+          <source srcset="carrusel/slide_mujeres_small.jpg" media="(max-width: 576px)">
+          <img class="d-block w-100" src="carrusel/slide_mujeres.jpg" alt="Diseñado para mujeres">
+        </picture>
+    </div>
+    <div class="carousel-item">
+       <picture>
+          <source srcset="carrusel/slide_entrenamiento_small.jpg" media="(max-width: 576px)">
+          <img class="d-block w-100" src="carrusel/slide_entrenamiento.jpg" alt="Entrenamiento">
+        </picture>
+    </div>
+    <div class="carousel-item">
+       <picture>
+          <source srcset="carrusel/slide_complete_small.jpg" media="(max-width: 576px)">
+          <img class="d-block w-100" src="carrusel/slide_complete.jpg" alt="Curves COMPLETE">
+        </picture>
+    </div>
+  </div>
+</div>
+<!--globos ventajas-->
+<div class="container mt-3">
+<div class="row">
+  <div class="col-12 col-sm-4 col-lg-2 text-center">
+    <img src="icons/icon_fuerza.png" class="img-fluid mx-auto d-block miniatura" alt="Ponte en forma">
+    <h4>Entrenamiento completo</h4>
+    <p>Ejercicios de fuerza, cardiovasculares y estiramientos</p>
+  </div>
+  <div class="col-12 col-sm-4 col-lg-2 text-center">
+	<img src="icons/icon_tiempo.png" class="img-fluid mx-auto d-block miniatura" alt="Tiempo de entrenamiento">
+    <h4>30 minutos</h4>
+    <p>Entrenamiento que quema más de 500 calorías</p>
+  </div>
+  <div class="col-12 col-sm-4 col-lg-2 text-center">
+    <img src="icons/icon_maquinas.png" class="img-fluid mx-auto d-block miniatura" alt="Máquinas especiales">
+    <h4>Máquinas hidráulicas</h4>
+    <p>Ponte en forma, gana fuerza y pierde peso</p>
+  </div>
+  <div class="col-12 col-sm-4 col-lg-2 text-center">
+    <img src="icons/icon_medidas.png" class="img-fluid mx-auto d-block miniatura" alt="Progresa cada día">
+    <h4>Seguimiento</h4>
+    <p>Cada mes puedes hacer una evaluación de tus progresos</p>
+  </div>
+  <div class="col-12 col-sm-4 col-lg-2 text-center">
+    <img src="icons/icon_mujeres.png" class="img-fluid mx-auto d-block miniatura" alt="Gimnasio femenino">
+    <h4>Para mujeres</h4>
+    <p>Gimnasio especialmente diseñado para mujeres</p>
+  </div>
+  <div class="col-12 col-sm-4 col-lg-2 text-center">
+    <img src="icons/icon_asesorar.png" class="img-fluid mx-auto d-block miniatura" alt="Siempre guiada">
+    <h4>Asesoramiento personalizado</h4>
+    <p>Siempre con una monitora que te ayudará</p>
+  </div>
+</div>
+</div>
+<!--captacion-->
+<div class="jumbotron jumbotron-fluid feedback">
+  <div class="container text-center">
+  <h2>Prueba una semana <strong>GRATIS</strong></h2>
+  <a href="contacto.html" class="btn btn-secondary btn-lg" role="button">Únete!</a>
+  </div>
+</div>
+<!--menu iconos solo -sm-->
+<div class="container mb-3 d-sm-none text-center">
+<div class="row">
+	<div class="col-4">
+		<a href="programas.html"><img src="icons/icon_programas.png" class="img-fluid mx-auto d-block miniatura" alt="Programas Curves"></a>
+    	<p>Programas</p>
+	</div>
+	<div class="col-4">
+		<a href="info.html"><img src="icons/icon_about.png" class="img-fluid mx-auto d-block miniatura" alt="Sobre nosotras"></a>
+        <p>Sobre nosotras</p>
+	</div>
+	<div class="col-4">
+		<a href="contacto.html"><img src="icons/icon_contacto.png" class="img-fluid mx-auto d-block miniatura" alt="Contacto"></a>
+        <p>Contacto</p>
+	</div>
+</div>
+</div>
+<!--testimonios +sm-->
+<div class="container mb-3 d-none d-sm-block">
+	<div class="row">
+		<div class="col-12 text-center">
+			<h4>Por qué las mujeres eligen Curves</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-1"><img src="icons/icon_check.png" class="icono float-right" alt="check"></div>
+		<div class="col-11 col-md-5">
+			<p>Curves es un programa comprobado de entrenamiento de fuerza, actividad cardiovascular y estiramientos</p>
+		</div>
+		<div class="col-1"><img src="icons/icon_check.png" class="icono float-right" alt="check"></div>
+		<div class="col-11 col-md-5">
+			<p>Se trabajan los principales grupos musculares y se quema hasta 500 calorías en tan solo 30 minutos</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-1"><img src="icons/icon_check.png" class="icono float-right" alt="check"></div>
+		<div class="col-11 col-md-5">
+			<p>Siempre hay una entrenadora Curves para motivarte y ayudarte con los ejercicios en todos los entrenamientos</p>
+		</div>
+		<div class="col-1"><img src="icons/icon_check.png" class="icono float-right" alt="check"></div>
+		<div class="col-11 col-md-5">
+			<p>Curves Complete ofrece una solución personalizada de pérdida de peso con fitness, planes de comida sana y asesoramiento individualizado</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-1"><img src="icons/icon_check.png" class="icono float-right" alt="check"></div>
+		<div class="col-11 col-md-5">
+			<p>Curves es una comunidad de mujeres que entrenan duro juntas y se apoyan mutuamente</p>
+		</div>
+		<div class="col-1"><img src="icons/icon_check.png" class="icono float-right" alt="check"></div>
+		<div class="col-11 col-md-5">
+			<p>Curves ayuda a las mujeres de cualquier figura, tamaño y nivel de condición física</p>
+		</div>
+	</div>	
+</div>
+<!--newsletter-->
+<div class="jumbotron jumbotron-fluid feedback">
+  <div class="container text-center">
+  <h4>No te pierdas nada</h4>
+  <p>Recibirás el horario semanal, recetas interesantes y toda la información importante en nuestra newsletter</p>
+<form>
+  <div class="form-row align-items-center">
+    <div class="col-12 col-md-7 my-1">
+      <label class="sr-only" for="txtEmail">Email</label>
+      <input type="email" class="form-control" id="txtEmail" placeholder="email" required>
+    </div>
+
+    <div class="col-5 col-md-2 my-1">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="checkSocia">
+        <label class="form-check-label" for="checkSocia">
+          Soy socia
+        </label>
+      </div>
+    </div>
+    <div class="col-7 col-md-3 my-1">
+      <button type="submit" class="btn btn-secondary btn-lg">Suscribirme</button>
+    </div>
+  </div>
+</form>
+  </div>
+</div>
+<!--monitoras +sm-->
+<div class="container text-center d-none d-sm-block mb-4" id="monitoras">
+  <div class="row">
+    <div class="col-12">
+    <h4>Nuestras monitoras</h4>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 col-md-3 mb-2">
+     	<div class="card">
+	  		<img class="card-img-top" src="staff/monitora_sandra.jpg" alt="Monitora Sandra">
+	  		<div class="card-body">
+	  			<h4>Sandra</h4>
+	    		<p class="card-text">Fisioterapeuta titulada</p>
+	  		</div>
+		</div>
+    </div>
+    <div class="col-6 col-md-3 mb-2">
+     	<div class="card">
+	  		<img class="card-img-top" src="staff/monitora_marta.jpg" alt="Monitora Marta">
+	  		<div class="card-body">
+	  			<h4>Marta</h4>
+	    		<p class="card-text">Especialista en boxing</p>
+	  		</div>
+		</div>
+    </div>
+    <div class="col-6 col-md-3 mb-2">
+     	<div class="card">
+	  		<img class="card-img-top" src="staff/monitora_alba.jpg" alt="Monitora Alba">
+	  		<div class="card-body">
+	  			<h4>Alba</h4>
+	    		<p class="card-text">Especialista en spinning</p>
+	  		</div>
+		</div>
+    </div>
+    <div class="col-6 col-md-3 mb-2">
+     	<div class="card">
+	  		<img class="card-img-top" src="staff/monitora_gala.jpg" alt="Monitora Gala">
+	  		<div class="card-body">
+	  			<h4>Gala</h4>
+	    		<p class="card-text">Monitora de Zumba</p>
+	  		</div>
+		</div>
+    </div>
+  </div>
+</div>
+<!--footer-->
+<div class="jumbotron jumbotron-fluid text-center mb-0" id="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-12"><p class="text-white-50">Copyright 2018. All Rights Reserved.</p>
+				<p><a href="#" class="text-white-50">Términos y condiciones</a> | 
+				<a href="#" class="text-white-50">Privacidad</a> | <a href="#" class="text-white-50">Trabaja con nosotras</a></p>
+				<a href="#"><img src="icons/icon_facebook.png" class="icono"></a> <a href="#"><img src="icons/icon_instagram.png" class="icono"></a>
+			</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>
